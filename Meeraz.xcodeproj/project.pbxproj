@@ -14,10 +14,10 @@
 		1802776424C6C453003E0A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1802776324C6C453003E0A10 /* Assets.xcassets */; };
 		1802776724C6C453003E0A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1802776524C6C453003E0A10 /* LaunchScreen.storyboard */; };
 		1802776F24C70FBB003E0A10 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802776E24C70FBB003E0A10 /* NewViewController.swift */; };
+		1873772524CAC49500158777 /* scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1873772424CAC49500158777 /* scroll.xib */; };
+		1873772724CAC4C100158777 /* scrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873772624CAC4C100158777 /* scrollView.swift */; };
 		18C6898524C9B3A600F2FB15 /* PartialRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6898424C9B3A600F2FB15 /* PartialRegistration.swift */; };
 		18C6898724C9BFDD00F2FB15 /* OnbordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6898624C9BFDD00F2FB15 /* OnbordingViewController.swift */; };
-		18C6898D24C9C39900F2FB15 /* sliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C6898B24C9C39900F2FB15 /* sliderViewController.xib */; };
-		18C6898F24C9C4F700F2FB15 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6898E24C9C4F700F2FB15 /* Slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		1802776624C6C453003E0A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1802776824C6C453003E0A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1802776E24C70FBB003E0A10 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		1873772424CAC49500158777 /* scroll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = scroll.xib; sourceTree = "<group>"; };
+		1873772624CAC4C100158777 /* scrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollView.swift; sourceTree = "<group>"; };
 		18C6898424C9B3A600F2FB15 /* PartialRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialRegistration.swift; sourceTree = "<group>"; };
 		18C6898624C9BFDD00F2FB15 /* OnbordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingViewController.swift; sourceTree = "<group>"; };
-		18C6898B24C9C39900F2FB15 /* sliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sliderViewController.xib; sourceTree = "<group>"; };
-		18C6898E24C9C4F700F2FB15 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 				1802776E24C70FBB003E0A10 /* NewViewController.swift */,
 				18C6898424C9B3A600F2FB15 /* PartialRegistration.swift */,
 				18C6898624C9BFDD00F2FB15 /* OnbordingViewController.swift */,
-				18C6898E24C9C4F700F2FB15 /* Slider.swift */,
-				18C6898B24C9C39900F2FB15 /* sliderViewController.xib */,
+				1873772624CAC4C100158777 /* scrollView.swift */,
+				1873772424CAC49500158777 /* scroll.xib */,
 				1802776024C6C44D003E0A10 /* Main.storyboard */,
 				1802776324C6C453003E0A10 /* Assets.xcassets */,
 				1802776524C6C453003E0A10 /* LaunchScreen.storyboard */,
@@ -142,8 +142,8 @@
 			files = (
 				1802776724C6C453003E0A10 /* LaunchScreen.storyboard in Resources */,
 				1802776424C6C453003E0A10 /* Assets.xcassets in Resources */,
+				1873772524CAC49500158777 /* scroll.xib in Resources */,
 				1802776224C6C44D003E0A10 /* Main.storyboard in Resources */,
-				18C6898D24C9C39900F2FB15 /* sliderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +159,8 @@
 				18C6898524C9B3A600F2FB15 /* PartialRegistration.swift in Sources */,
 				18C6898724C9BFDD00F2FB15 /* OnbordingViewController.swift in Sources */,
 				1802775D24C6C44D003E0A10 /* SceneDelegate.swift in Sources */,
+				1873772724CAC4C100158777 /* scrollView.swift in Sources */,
 				1802776F24C70FBB003E0A10 /* NewViewController.swift in Sources */,
-				18C6898F24C9C4F700F2FB15 /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
