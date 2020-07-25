@@ -18,6 +18,9 @@
 		1873772724CAC4C100158777 /* scrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873772624CAC4C100158777 /* scrollView.swift */; };
 		18C6898524C9B3A600F2FB15 /* PartialRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6898424C9B3A600F2FB15 /* PartialRegistration.swift */; };
 		18C6898724C9BFDD00F2FB15 /* OnbordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6898624C9BFDD00F2FB15 /* OnbordingViewController.swift */; };
+		18EF8B0124CC0E61007AC99F /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF8B0024CC0E61007AC99F /* OTPViewController.swift */; };
+		18EF8B0224CC1261007AC99F /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185C7E9024CB178800ABD71E /* Quicksand-VariableFont_wght.ttf */; };
+		18EF8B0424CC13E2007AC99F /* MuseoModerno-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18EF8B0324CC12E5007AC99F /* MuseoModerno-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +33,13 @@
 		1802776624C6C453003E0A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1802776824C6C453003E0A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1802776E24C70FBB003E0A10 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		185C7E9024CB178800ABD71E /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		1873772424CAC49500158777 /* scroll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = scroll.xib; sourceTree = "<group>"; };
 		1873772624CAC4C100158777 /* scrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollView.swift; sourceTree = "<group>"; };
 		18C6898424C9B3A600F2FB15 /* PartialRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialRegistration.swift; sourceTree = "<group>"; };
 		18C6898624C9BFDD00F2FB15 /* OnbordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingViewController.swift; sourceTree = "<group>"; };
+		18EF8B0024CC0E61007AC99F /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		18EF8B0324CC12E5007AC99F /* MuseoModerno-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoModerno-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +78,12 @@
 				1802776E24C70FBB003E0A10 /* NewViewController.swift */,
 				18C6898424C9B3A600F2FB15 /* PartialRegistration.swift */,
 				18C6898624C9BFDD00F2FB15 /* OnbordingViewController.swift */,
+				18EF8B0024CC0E61007AC99F /* OTPViewController.swift */,
 				1873772624CAC4C100158777 /* scrollView.swift */,
 				1873772424CAC49500158777 /* scroll.xib */,
 				1802776024C6C44D003E0A10 /* Main.storyboard */,
+				185C7E9024CB178800ABD71E /* Quicksand-VariableFont_wght.ttf */,
+				18EF8B0324CC12E5007AC99F /* MuseoModerno-VariableFont_wght.ttf */,
 				1802776324C6C453003E0A10 /* Assets.xcassets */,
 				1802776524C6C453003E0A10 /* LaunchScreen.storyboard */,
 				1802776824C6C453003E0A10 /* Info.plist */,
@@ -142,7 +151,9 @@
 			files = (
 				1802776724C6C453003E0A10 /* LaunchScreen.storyboard in Resources */,
 				1802776424C6C453003E0A10 /* Assets.xcassets in Resources */,
+				18EF8B0424CC13E2007AC99F /* MuseoModerno-VariableFont_wght.ttf in Resources */,
 				1873772524CAC49500158777 /* scroll.xib in Resources */,
+				18EF8B0224CC1261007AC99F /* Quicksand-VariableFont_wght.ttf in Resources */,
 				1802776224C6C44D003E0A10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +169,7 @@
 				1802775B24C6C44D003E0A10 /* AppDelegate.swift in Sources */,
 				18C6898524C9B3A600F2FB15 /* PartialRegistration.swift in Sources */,
 				18C6898724C9BFDD00F2FB15 /* OnbordingViewController.swift in Sources */,
+				18EF8B0124CC0E61007AC99F /* OTPViewController.swift in Sources */,
 				1802775D24C6C44D003E0A10 /* SceneDelegate.swift in Sources */,
 				1873772724CAC4C100158777 /* scrollView.swift in Sources */,
 				1802776F24C70FBB003E0A10 /* NewViewController.swift in Sources */,

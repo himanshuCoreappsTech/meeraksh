@@ -111,6 +111,16 @@ class PartialRegistration: UIViewController {
     
     
     
+    @IBAction func next(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     }

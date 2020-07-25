@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r3x-hm-hsx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoModerno-VariableFont_wght.ttf">
+            <string>MuseoModerno-SemiBold_Bold</string>
+        </array>
+        <array key="Quicksand-VariableFont_wght.ttf">
+            <string>Quicksand-Light_Bold</string>
+            <string>Quicksand-Light_Medium</string>
+            <string>Quicksand-Light_Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,24 +34,27 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="e9R-bb-CFl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="16"/>
                                 <state key="normal" title="Start Earning Now">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Twf-lr-FXd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeraz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOb-gH-NHn">
-                                <rect key="frame" x="155" y="50" width="96" height="48"/>
+                                <rect key="frame" x="155" y="50" width="124" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="7EP-Xc-bdt"/>
+                                    <constraint firstAttribute="width" constant="124" id="7EP-Xc-bdt"/>
                                     <constraint firstAttribute="height" constant="48" id="F6H-vg-lkH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="MuseoModerno-SemiBold_Bold" family="MuseoModerno" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn from home with no investment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV8-tm-1pb">
-                                <rect key="frame" x="71" y="124" width="234" height="57.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <rect key="frame" x="71" y="124" width="234" height="60"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Regular" family="Quicksand" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,7 +68,7 @@
                             <constraint firstItem="jV8-tm-1pb" firstAttribute="top" secondItem="lOb-gH-NHn" secondAttribute="bottom" constant="26" id="GEs-u3-2za"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jV8-tm-1pb" secondAttribute="trailing" constant="70" id="JKq-eM-CpX"/>
                             <constraint firstItem="lOb-gH-NHn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="SFf-4h-lki"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lOb-gH-NHn" secondAttribute="trailing" constant="124" id="UWk-Xp-psD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lOb-gH-NHn" secondAttribute="trailing" constant="96" id="UWk-Xp-psD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KLG-61-mc7" secondAttribute="bottom" id="XZm-Xb-7SO"/>
                             <constraint firstItem="KLG-61-mc7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cx3-rm-BMW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KLG-61-mc7" secondAttribute="trailing" id="go1-n7-Bly"/>
@@ -72,17 +85,17 @@
         <!--Phone Verification-->
         <scene sceneID="dSV-aq-kw4">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4Wa-lq-g3U" customClass="NewViewController" customModule="Meeraz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewViewController" modalPresentationStyle="fullScreen" id="4Wa-lq-g3U" customClass="NewViewController" customModule="Meeraz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bat-Of-LHr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Phone number to get you OTP." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcE-05-fJ9">
-                                <rect key="frame" x="15" y="15" width="267.5" height="17"/>
+                                <rect key="frame" x="15" y="15" width="280.5" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="uEB-by-8nj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -109,7 +122,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="gnR-py-Vug"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Medium" family="Quicksand" pointSize="12"/>
                                 <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -119,17 +132,20 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="mRG-pd-HyA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="16"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="continue:" destination="4Wa-lq-g3U" eventType="touchUpInside" id="vF7-mC-3ec"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, I accept the Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmW-Xa-UUb">
                                 <rect key="frame" x="49" y="541" width="277" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="YrC-Oz-Ahx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Medium" family="Quicksand" pointSize="12"/>
                                 <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -158,6 +174,9 @@
                     <navigationItem key="navigationItem" title="Phone Verification" id="XqQ-XX-vv5">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-left-24" id="e6F-b6-U7S">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="back:" destination="4Wa-lq-g3U" id="d06-N1-QkX"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -171,26 +190,26 @@
         <!--Phone Verification-->
         <scene sceneID="32H-jN-2yd">
             <objects>
-                <viewController id="U7B-Yf-XjQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OTPViewController" modalPresentationStyle="fullScreen" id="U7B-Yf-XjQ" customClass="OTPViewController" customModule="Meeraz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lab-rQ-BQo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the 6 digit OTP sent to your phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUw-gp-EIv">
-                                <rect key="frame" x="16" y="14" width="314" height="17"/>
+                                <rect key="frame" x="16" y="14" width="327.5" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="nIk-U1-ajH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91 9782699076  via sms." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCN-yt-PH7">
-                                <rect key="frame" x="16" y="34" width="172.5" height="17"/>
+                                <rect key="frame" x="16" y="34" width="165" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="lR9-2a-pgY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -200,21 +219,112 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="FAJ-aP-kFN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="16"/>
                                 <state key="normal" title="Verify">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="verify:" destination="U7B-Yf-XjQ" eventType="touchUpInside" id="HrA-4D-Hcr"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZgI-qP-18Y">
+                                <rect key="frame" x="22" y="114" width="331" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opv-cB-O27">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6ML-7T-VkB"/>
+                                            <constraint firstAttribute="width" constant="45" id="GUu-xu-TiB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bke-pw-UOd">
+                                        <rect key="frame" x="57" y="0.0" width="45.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="BUM-BV-Bx3"/>
+                                            <constraint firstAttribute="height" constant="40" id="iNS-s9-bco"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U74-Sa-epx">
+                                        <rect key="frame" x="114.5" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="BDU-F8-d7v"/>
+                                            <constraint firstAttribute="height" constant="40" id="XJl-wE-nOn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nad-QW-nJ9">
+                                        <rect key="frame" x="171.5" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MY9-MX-bdw"/>
+                                            <constraint firstAttribute="width" constant="45" id="tYF-XE-cDL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0k-kH-nu3">
+                                        <rect key="frame" x="228.5" y="0.0" width="45.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3ps-Oe-gFH"/>
+                                            <constraint firstAttribute="width" constant="45" id="ZOe-ZS-IVk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2H-L4-zhj">
+                                        <rect key="frame" x="286" y="0.0" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DcF-Yl-gDJ"/>
+                                            <constraint firstAttribute="width" constant="45" id="qD3-vm-Ibl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn’t receive OTP?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onq-X4-u9c">
+                                <rect key="frame" x="22" y="174" width="125" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="WVJ-J8-p9L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Regular" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gA-Dg-Xiu">
+                                <rect key="frame" x="270" y="168" width="80" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="a19-LQ-gXn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Regular" family="Quicksand" pointSize="14"/>
+                                <state key="normal" title="Resend OTP">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.39215686274509803" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resendOTP:" destination="U7B-Yf-XjQ" eventType="touchUpInside" id="XOM-Ir-5Yx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ZgI-qP-18Y" firstAttribute="top" secondItem="hCN-yt-PH7" secondAttribute="bottom" constant="63" id="BFJ-P0-Jd4"/>
                             <constraint firstItem="l83-0Z-eQf" firstAttribute="leading" secondItem="8pL-NM-VGV" secondAttribute="leading" id="Cyh-wi-qsF"/>
                             <constraint firstItem="UUw-gp-EIv" firstAttribute="top" secondItem="8pL-NM-VGV" secondAttribute="top" constant="14" id="K8g-Uw-pDK"/>
                             <constraint firstItem="UUw-gp-EIv" firstAttribute="leading" secondItem="8pL-NM-VGV" secondAttribute="leading" constant="16" id="KWT-JF-JoS"/>
                             <constraint firstItem="l83-0Z-eQf" firstAttribute="bottom" secondItem="8pL-NM-VGV" secondAttribute="bottom" id="NB0-6y-yqz"/>
+                            <constraint firstItem="ZgI-qP-18Y" firstAttribute="leading" secondItem="8pL-NM-VGV" secondAttribute="leading" constant="22" id="V2L-fc-UyY"/>
                             <constraint firstItem="hCN-yt-PH7" firstAttribute="top" secondItem="UUw-gp-EIv" secondAttribute="bottom" constant="3" id="YRn-i2-PYL"/>
+                            <constraint firstItem="Onq-X4-u9c" firstAttribute="top" secondItem="ZgI-qP-18Y" secondAttribute="bottom" constant="20" id="bSZ-Et-Qfj"/>
+                            <constraint firstItem="8pL-NM-VGV" firstAttribute="trailing" secondItem="3gA-Dg-Xiu" secondAttribute="trailing" constant="25" id="dcB-I3-A2D"/>
+                            <constraint firstItem="Onq-X4-u9c" firstAttribute="leading" secondItem="8pL-NM-VGV" secondAttribute="leading" constant="22" id="fRb-PE-jAS"/>
                             <constraint firstItem="hCN-yt-PH7" firstAttribute="leading" secondItem="8pL-NM-VGV" secondAttribute="leading" constant="16" id="k8X-50-7ZI"/>
                             <constraint firstItem="l83-0Z-eQf" firstAttribute="trailing" secondItem="8pL-NM-VGV" secondAttribute="trailing" id="mJC-99-LSc"/>
+                            <constraint firstItem="8pL-NM-VGV" firstAttribute="trailing" secondItem="ZgI-qP-18Y" secondAttribute="trailing" constant="22" id="rq2-xq-5b1"/>
+                            <constraint firstItem="3gA-Dg-Xiu" firstAttribute="top" secondItem="ZgI-qP-18Y" secondAttribute="bottom" constant="14" id="tVV-eC-mLR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8pL-NM-VGV"/>
                     </view>
@@ -223,10 +333,18 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="five" destination="h0k-kH-nu3" id="cqt-sQ-fPg"/>
+                        <outlet property="four" destination="nad-QW-nJ9" id="crI-X9-6w5"/>
+                        <outlet property="one" destination="Opv-cB-O27" id="Dio-tP-F70"/>
+                        <outlet property="six" destination="E2H-L4-zhj" id="HB2-4d-QU4"/>
+                        <outlet property="three" destination="U74-Sa-epx" id="K5a-2v-2cK"/>
+                        <outlet property="two" destination="Bke-pw-UOd" id="c2R-UL-2h9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VeD-Kf-zrF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3341.5999999999999" y="57.121439280359823"/>
+            <point key="canvasLocation" x="3185" y="55"/>
         </scene>
         <!--Partial Registration-->
         <scene sceneID="rSx-Sm-AtS">
@@ -241,7 +359,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="tH8-1n-xqG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -264,11 +382,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdl-n1-QLb">
-                                <rect key="frame" x="23" y="299" width="48" height="17"/>
+                                <rect key="frame" x="23" y="299" width="49.5" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="X1c-eG-ezz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -295,11 +413,11 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We6-lX-mSb">
-                                <rect key="frame" x="23" y="420" width="74.5" height="17"/>
+                                <rect key="frame" x="23" y="420" width="77" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="6LM-TC-Yf3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -375,10 +493,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="yAY-XH-hHn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="16"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="NP2-Hb-AA2" eventType="touchUpInside" id="ikP-Ab-kOh"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AvL-3w-gb4">
                                 <rect key="frame" x="195" y="160" width="156" height="40"/>
@@ -458,20 +579,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-zf-KMa">
-                                <rect key="frame" x="20" y="20" width="75" height="22"/>
+                                <rect key="frame" x="20" y="20" width="79.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="wr0-Aj-VBL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="18"/>
                                 <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Himanshu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9g-J9-f9D">
-                                <rect key="frame" x="20" y="57" width="149" height="41"/>
+                                <rect key="frame" x="20" y="57" width="162" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="yPN-FA-GTy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -490,13 +611,19 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="0hw-lZ-h8i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light_Bold" family="Quicksand" pointSize="16"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="ziS-Vv-mNc" eventType="touchUpInside" id="E5a-J6-GIY"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ID-26-Ntm">
                                 <rect key="frame" x="0.0" y="121" width="375" height="494"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ziS-Vv-mNc" id="vtv-2d-ohg"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -655,6 +782,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ly-Wl-3UG" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FNw-aw-znn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="RYF-lf-VSv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

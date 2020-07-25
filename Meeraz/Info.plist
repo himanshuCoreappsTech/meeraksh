@@ -58,5 +58,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Quicksand-VariableFont_wght.ttf</string>
+		<string>MuseoModerno-VariableFont_wght.ttf</string>
+	</array>
 </dict>
 </plist>

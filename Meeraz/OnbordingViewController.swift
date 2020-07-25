@@ -163,6 +163,8 @@ class OnbordingViewController: UIViewController, UIScrollViewDelegate {
     
     
     
+    @IBAction func next(_ sender: UIButton) {
+    }
     
     
 

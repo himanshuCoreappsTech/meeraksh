@@ -31,6 +31,15 @@ class NewViewController: UIViewController {
     
     
     
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func `continue`(_ sender: UIButton) {
+    }
+    
 }
 
 
